@@ -1,0 +1,110 @@
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+	overflow: hidden;
+  background-image: linear-gradient(
+  45deg,
+  hsl(315deg 73% 10%) 0%,
+  hsl(322deg 75% 15%) 6%,
+  hsl(328deg 77% 20%) 11%,
+  hsl(335deg 80% 25%) 17%,
+  hsl(342deg 82% 29%) 22%,
+  hsl(349deg 84% 34%) 27%,
+  hsl(356deg 87% 38%) 33%,
+  hsl(3deg 90% 42%) 38%,
+  hsl(10deg 92% 46%) 44%,
+  hsl(17deg 95% 50%) 49%,
+  hsl(21deg 96% 52%) 55%,
+  hsl(24deg 96% 54%) 60%,
+  hsl(28deg 96% 57%) 66%,
+  hsl(32deg 97% 59%) 72%,
+  hsl(35deg 97% 61%) 77%,
+  hsl(39deg 98% 63%) 83%,
+  hsl(43deg 98% 65%) 88%,
+  hsl(47deg 99% 68%) 94%,
+  hsl(50deg 100% 70%) 100%
+);
+  color: #333;
+	font-family: 'Courier New', 'Courier', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.number {
+	width: 100%;
+	height: 100px;
+}
+
+.one-first, .one-second, .zero-first, .zero-second {
+		position: absolute;
+		box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.2);
+	}
+
+.one-first, .one-second {
+		background: white;
+		border-radius: 15px;
+	}
+
+.one-first {
+	width: 35px;
+	height: 70px;
+	transform: translate(-18px, -4px) rotate(50deg);
+	z-index: 666;
+}
+
+.one-second {
+	width: 35px;
+	height: 100px;
+	z-index: 999;
+}
+
+.zero-first, .zero-second {
+	width: 35px;
+	height: 35px;
+	background: transparent;
+	border-radius: 100%;
+	border: 32px solid #fff;
+}
+
+.zero-first {
+	transform: translate(25px);
+	z-index: 888;
+}
+
+.zero-second {
+	transform: translate(110px);
+	z-index: 777;
+}
+
+.days, .challenge {
+	text-transform: uppercase;
+	font-weight: 700;
+	color: #fff;
+}
+
+.days {
+	font-size: 85px;
+	line-height: 65px;
+}
+
+.challenge {
+	font-size: 25.5px;
+	line-height: 25px;
+}
